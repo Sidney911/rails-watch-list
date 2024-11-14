@@ -1,0 +1,10 @@
+<h1>Movielist</h1>
+
+<div id="movies">
+  <% @movies.each do |movie| %>
+    <%= render "movie", movie: movie %>
+    <p>
+      <%= link_to "Show this movie", movie %>
+    </p>
+  <% end %>
+</div>
